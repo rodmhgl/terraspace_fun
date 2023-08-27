@@ -5,7 +5,7 @@ resource "random_pet" "this" {
 
 resource "azurerm_resource_group" "this" {
   name     = "demo-resources-${random_pet.this.id}"
-  location = "eastus"
+  location = "eastus2"
 }
 
 module "storage_account" {
