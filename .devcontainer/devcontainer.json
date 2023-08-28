@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/go
+{
+	"name": "Terraspace",
+	"build": {
+		"dockerfile": "./Dockerfile"
+	},
+	"features": {},
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"eamodio.gitlens",
+				"github.copilot",
+				"hashicorp.terraform",
+				"mutantdino.resourcemonitor",
+				"streetsidesoftware.code-spell-checker",
+				"redhat.vscode-yaml",
+				"vscode.emmet",
+				"wayou.vscode-todo-highlight"
+			]
+		}
+	},
+	"forwardPorts": [
+		9000
+	],
+	"portsAttributes": {
+		"9000": {
+			"label": "Hello Remote World",
+			"onAutoForward": "notify"
+		}
+	},
+	"remoteUser": "vscode",
+	"containerUser": "vscode"
+}
