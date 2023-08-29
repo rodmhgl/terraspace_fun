@@ -2,6 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/go
 {
 	"name": "Terraspace",
+	// "image": "rodstewart/terraspace",
 	"build": {
 		"dockerfile": "./Dockerfile"
 	},
@@ -9,7 +10,72 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			"settings": {},
+			"settings": {
+				"[terraform]": {
+					"breadcrumbs.showArrays": true,
+					"breadcrumbs.showBooleans": true,
+					"breadcrumbs.showClasses": true,
+					"breadcrumbs.showConstants": true,
+					"breadcrumbs.showConstructors": true,
+					"breadcrumbs.showEnumMembers": true,
+					"breadcrumbs.showEnums": true,
+					"breadcrumbs.showEvents": true,
+					"breadcrumbs.showFields": true,
+					"breadcrumbs.showFiles": true,
+					"breadcrumbs.showFunctions": true,
+					"breadcrumbs.showInterfaces": true,
+					"breadcrumbs.showKeys": true,
+					"breadcrumbs.showKeywords": true,
+					"breadcrumbs.showMethods": true,
+					"breadcrumbs.showModules": true,
+					"breadcrumbs.showNamespaces": true,
+					"breadcrumbs.showNull": true,
+					"breadcrumbs.showNumbers": true,
+					"breadcrumbs.showObjects": true,
+					"breadcrumbs.showOperators": true,
+					"breadcrumbs.showPackages": true,
+					"breadcrumbs.showProperties": true,
+					"breadcrumbs.showReferences": true,
+					"breadcrumbs.showSnippets": true,
+					"breadcrumbs.showStrings": true,
+					"breadcrumbs.showStructs": true,
+					"breadcrumbs.showTypeParameters": true,
+					"breadcrumbs.showUnits": true,
+					"breadcrumbs.showVariables": true,
+					"breadcrumbs.symbolSortOrder": true,
+					"editor.acceptSuggestionOnCommitCharacter": true,
+					"editor.acceptSuggestionOnEnter": "smart",
+					"editor.autoClosingBrackets": "always",
+					"editor.autoClosingDelete": "always",
+					"editor.autoClosingOvertype": "always",
+					"editor.autoClosingQuotes": "always",
+					"editor.autoIndent": true,
+					"editor.autoSurround": "languageDefined",
+					"editor.codeActionsOnSave": {
+						"source.organizeImports": true
+					},
+					"editor.codeLens": true,
+					"editor.codeLensFontFamily": "Source Code Pro",
+					"editor.codeLensFontSize": 12,
+					"editor.codeLensFontWeight": "normal",
+					"editor.colorDecorators": true,
+					"editor.cursorBlinking": "blink",
+					"editor.cursorSmoothCaretAnimation": true,
+					"editor.cursorStyle": "line",
+					"editor.cursorSurroundingLines": 0,
+					"editor.cursorSurroundingLinesStyle": "default",
+					"editor.cursorWidth": 0,
+					"editor.detectIndentation": true,
+					"editor.dragAndDrop": true,
+					"editor.emptySelectionClipboard": true,
+					"editor.fastScrollSensitivity": 5,
+					"editor.find.addExtraSpaceOnTop": true,
+					"editor.bracketPairColorization.enabled": true,
+					"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+					"editor.formatOnSave": true
+
+				}
+			},
 			"extensions": [
 				"eamodio.gitlens",
 				"github.copilot",
